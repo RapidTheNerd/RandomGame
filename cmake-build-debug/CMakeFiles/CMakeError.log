@@ -1,0 +1,18 @@
+Detecting CXX [-std=c++98] compiler features failed to compile with the following output:
+Change Dir: F:/C++/Projects/RandomGame/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_7ac7f/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_7ac7f.dir\build.make CMakeFiles/cmTC_7ac7f.dir/build
+mingw32-make.exe[1]: Entering directory 'F:/C++/Projects/RandomGame/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7ac7f.dir/feature_tests.cxx.obj
+C:\MinGW\bin\g++.exe     -std=c++98 -o CMakeFiles\cmTC_7ac7f.dir\feature_tests.cxx.obj -c F:\C++\Projects\RandomGame\cmake-build-debug\CMakeFiles\feature_tests.cxx
+Assembler messages:
+Fatal error: can't create CMakeFiles\cmTC_7ac7f.dir\feature_tests.cxx.obj: No such file or directory
+CMakeFiles\cmTC_7ac7f.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_7ac7f.dir/feature_tests.cxx.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_7ac7f.dir/feature_tests.cxx.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'F:/C++/Projects/RandomGame/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_7ac7f/fast' failed
+mingw32-make.exe: *** [cmTC_7ac7f/fast] Error 2
+
+
+
