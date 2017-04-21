@@ -26,6 +26,18 @@ void show(){
     }
 }
 
+void setS(){
+    int s = 0;
+    while(s < maxS){
+        int x = rand() % rows;
+        int y = rand() % elements;
+        if(matrix[x][y] != 1){
+            s++;
+            matrix[x][y] = 1;
+        }
+    }
+}
+
 int main() {
     clear();
     show();
