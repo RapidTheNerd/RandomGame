@@ -61,13 +61,26 @@ bool attack(int x, int y){
 }
 
 int main() {
+    srand(time(NULL));
     clear();
-    show();
-    cout << "=======" << endl;
     setS();
-    attack(1,1);
-    cout << "No of ships: " << numOfS() << endl;
+    int pos1, pos2;
+    char prompt;
+    while(1){
+        cout << "Input location: "; cin >> pos1 >> pos2;
+        if(attack(pos1, pos2))
+            cout << "You attacked correctly" << endl;
+            else
+                cout << "You fucking missed" << endl;
+                cout << "Surrender? (y,n)" >> cin >> prompt;
+                if(prompt == 'y'){
+                    break;
+                }
+            cout << "Game over!" << endl;
+            show();
+        
+        }
     system("pause");
     return 0;
-
 }
+
