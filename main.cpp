@@ -26,6 +26,20 @@ void show(){
     }
 }
 
+int numOfS(){
+
+    int c = 0;
+
+    for(int i = 0; i < rows; i++){
+        for(int j = 0; j < elements; j++){
+            if(matrix[i][j] = 1){
+                c++; //Kappa
+            }
+        }
+        return c;
+    }
+}
+
 void setS(){
     int s = 0;
     while(s < maxS){
@@ -38,9 +52,21 @@ void setS(){
     }
 }
 
+bool attack(int x, int y){
+    if(matrix[x][y] == 1){
+        matrix[x][y] == 2;
+        return true;
+    }
+    return false;
+}
+
 int main() {
     clear();
     show();
+    cout << "=======" << endl;
+    setS();
+    attack(1,1);
+    cout << "No of ships: " << numOfS() << endl;
     system("pause");
     return 0;
 
